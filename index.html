@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Production Entry</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+      }
+      .container {
+        max-width: 600px;
+        margin: auto;
+        padding: 20px;
+      }
+      label {
+        display: block;
+        margin: 10px 0;
+      }
+      select,
+      input,
+      button {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+      }
+      .admin-section {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Production Entry</h1>
+      <div id="section-select">
+        <label for="section">Select Section</label>
+        <select id="section"></select>
+        <button id="section-next">Next</button>
+      </div>
+
+      <div id="employee-select" style="display: none">
+        <label for="employee">Select Employee</label>
+        <select id="employee"></select>
+        <button id="employee-next">Next</button>
+      </div>
+
+      <div id="product-list" style="display: none">
+        <h2>Products</h2>
+        <div id="products"></div>
+        <button id="save">Save</button>
+        <button id="send">Send to Optima</button>
+      </div>
+
+      <div class="admin-section">
+        <h2>Admin Panel</h2>
+        <button id="admin-login">Enter Admin PIN</button>
+        <div id="admin-panel" style="display: none">
+          <label for="new-section">Add Section</label>
+          <input type="text" id="new-section" placeholder="Section Name" />
+          <button id="add-section">Add Section</button>
+
+          <label for="remove-section">Remove Section</label>
+          <select id="remove-section"></select>
+          <button id="delete-section">Remove Section</button>
+
+          <label for="admin-section">Select Section</label>
+          <select id="admin-section"></select>
+
+          <label for="new-employee">Add Employee</label>
+          <input type="text" id="new-employee" placeholder="Employee Name" />
+          <button id="add-employee">Add Employee</button>
+
+          <label for="remove-employee">Remove Employee</label>
+          <select id="remove-employee"></select>
+          <button id="delete-employee">Remove Employee</button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
