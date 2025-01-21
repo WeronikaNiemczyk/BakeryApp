@@ -68,7 +68,7 @@ import {
     if (pin === ADMIN_PIN) {
       adminPanel.style.display = "block";
     } else {
-      alert("Incorrect PIN!");
+      alert("Niepoprawny PIN!");
     }
   });
   addSectionButton.addEventListener("click", () => {
@@ -104,7 +104,7 @@ import {
   document.getElementById("employee-next").addEventListener("click", () => {
     const selectedEmployee = employeeSelect.value;
     if (!selectedEmployee) {
-      alert("Please select an employee.");
+      alert("Wybierz pracownika.");
       return;
     }
     populateProducts();
@@ -124,10 +124,10 @@ import {
     console.log("Employee ID:", selectedEmployee);
     console.log("Product Quantities:", productQuantities);
 
-    alert("Document saved successfully!");
+    alert("Dokument został poprawnie zapisany!");
   });
   document.getElementById("send").addEventListener("click", () => {
-    alert("Document sent to Optima!");
+    alert("Dokument został przesłany do Optimy!");
   });
 
   function populateProducts() {
